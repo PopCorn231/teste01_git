@@ -13,3 +13,5 @@ def calculate_average():
         return sum(num_list) / len(num_list) if num_list else 0
     except ValueError:
         return "Invalid input. Please enter valid numbers."
+
+calculate_average()
