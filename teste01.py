@@ -15,3 +15,4 @@ def calculate_average():
         return "Invalid input. Please enter valid numbers."
 
 calculate_average()
+print('alguma coisa')
