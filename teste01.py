@@ -1,18 +1,10 @@
-def calculate_average():
-    """
+def calcular_media_boletim(nota1, nota2, nota3, nota4):
+    return (nota1 + nota2 + nota3 + nota4) / 4
 
-    Prompts the user to input numbers separated by spaces,
-    calculates the average, and returns the result.
-    """
-    try:
-        # Prompt the user for numbers
-        numbers = input("Enter numbers separated by spaces: ")
-        # Convert input to a list of floats
-        num_list = [float(num) for num in numbers.split()]
-        # Return the average
-        return sum(num_list) / len(num_list) if num_list else 0
-    except ValueError:
-        return "Invalid input. Please enter valid numbers."
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota: "))
+nota4 = float(input("Digite a quarta nota: "))
 
-calculate_average()
-print('alguma coisa')
+media = calcular_media_boletim(nota1, nota2, nota3, nota4)
+print(f"A média do seu boletim foi: {media}")
