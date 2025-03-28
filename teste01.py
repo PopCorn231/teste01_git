@@ -8,3 +8,10 @@ nota4 = float(input("Digite a quarta nota: "))
 
 media = calcular_media_boletim(nota1, nota2, nota3, nota4)
 print(f"A média do seu boletim foi: {media}")
+
+if media > 6:
+    print("Você foi aprovado!")
+elif media == 6:
+    print("Você está de recuperação")
+else:
+    print("Você foi reprovado!")
